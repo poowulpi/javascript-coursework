@@ -8,7 +8,7 @@ let completedCourse = null;
 
 console.log("Age:", age, "| Type:", typeof age);
 console.log("Name:", fullName, "| Type:", typeof fullName);
-console.log("Enrolled:", isEnrolled, "|Type:", typeof isEnrolled);
+console.log("Enrolled:", isEnrolled, "| Type:", typeof isEnrolled);
 console.log("Future Goals:", futureGoal, "| Type:", typeof futureGoal);
 console.log("Completed Course:", completedCourse, "| Type:", typeof completedCourse);
 
@@ -40,3 +40,19 @@ Why does JavaScript return this value?
     null is treated as an empty or nonexistent numeric calue when converted to a number. This comes from JavaScript's type conversion rules.
 */
 
+/* Ask an AI assistant
+
+Type coercion is when JavaScript automatically converts one data type into another during an operation.
+
+Devs consider it dangerous because it can create unexpected results and hard to find bugs.
+
+Examples include: 
+console.log("5" + 1); // "51"
+console.log ("5" - 1); // 4
+
+In the top example, JavaScript converts the number to a string and concatenates it.
+In the bottom example, JavaScript converts the string to a number and performs subtraction.
+
+Inconsistency leads to bugs! 
+
+*/
