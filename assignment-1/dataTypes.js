@@ -86,3 +86,16 @@ console.log("Enrolled AND Completed Assignment:", isEnrolled && hasCompletedAssi
 console.log("Enrolled OR Completed Assignment:", isEnrolled || hasCompletedAssignment);
 console.log("NOT Enrolled:", !isEnrolled);
 console.log("NOT Completed Assignment:", !hasCompletedAssignment);
+
+/* TRUTH TABLE
+
+| A     | B     | A && B| A || B|
+|-------|-------|-------|-------|
+| true  | true  | true  | true  |
+| true  | false | false | true  |
+| false | true  | false | true  |
+| false | false | false | false |
+
+AND (&&) only returns when BOTH values are true
+OR (||) returns true when at least ONE value is true
+*/
