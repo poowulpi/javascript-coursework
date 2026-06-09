@@ -31,3 +31,12 @@ console.log(`Original: ${isEnrolled} (${typeof isEnrolled}) → Converted: ${enr
 
 const completedCourseAsNumber = Number(completedCourse);
 console.log(`Original: ${completedCourse} (${typeof completedCourse}) → Converted: ${completedCourseAsNumber} (${typeof completedCourseAsNumber})`);
+
+/* Task 2.2
+
+What value did you get?
+    null returns 0
+Why does JavaScript return this value?
+    null is treated as an empty or nonexistent numeric calue when converted to a number. This comes from JavaScript's type conversion rules.
+*/
+
