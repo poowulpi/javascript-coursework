@@ -77,3 +77,12 @@ console.log("Divide zero by zero:", 0 / 0);
 Divide x by zero returned Infinite
 Divide zero by zero returned NaN
 */
+
+/* TASK 3.2 */
+
+let hasCompletedAssignment = true;
+
+console.log("Enrolled AND Completed Assignment:", isEnrolled && hasCompletedAssignment);
+console.log("Enrolled OR Completed Assignment:", isEnrolled || hasCompletedAssignment);
+console.log("NOT Enrolled:", !isEnrolled);
+console.log("NOT Completed Assignment:", !hasCompletedAssignment);
