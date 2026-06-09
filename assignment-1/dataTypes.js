@@ -17,3 +17,17 @@ I learned that undefined means a variable has been declared but a value has not 
 Null is used when I WANT a variable to have no value.
 Undefined happens automatically, while null is a value that I assign myself.
 */
+
+/* Part 2 - type conversion and operations */
+
+const ageAsString = String(age);
+console.log(`Original: ${age} (${typeof age}) → Converted: ${ageAsString} (${typeof ageAsString})`);
+
+const nameAsBoolean = Boolean(fullName);
+console.log(`Original: ${fullName} (${typeof fullName}) → Converted: ${nameAsBoolean} (${typeof nameAsBoolean})`);
+
+const enrolledAsNumber = Number(isEnrolled);
+console.log(`Original: ${isEnrolled} (${typeof isEnrolled}) → Converted: ${enrolledAsNumber} (${typeof enrolledAsNumber})`);
+
+const completedCourseAsNumber = Number(completedCourse);
+console.log(`Original: ${completedCourse} (${typeof completedCourse}) → Converted: ${completedCourseAsNumber} (${typeof completedCourseAsNumber})`);
