@@ -1,4 +1,4 @@
-// Primitive data types in JavaScript
+// TASK 1 Primitive data types in JavaScript
 
 let age = 31;
 let fullName = "Katie Jean";
@@ -18,7 +18,7 @@ Null is used when I WANT a variable to have no value.
 Undefined happens automatically, while null is a value that I assign myself.
 */
 
-/* Part 2 - type conversion and operations */
+/* TASK 2 Type conversion and operations */
 
 const ageAsString = String(age);
 console.log(`Original: ${age} (${typeof age}) → Converted: ${ageAsString} (${typeof ageAsString})`);
@@ -55,4 +55,25 @@ In the bottom example, JavaScript converts the string to a number and performs s
 
 Inconsistency leads to bugs! 
 
+*/
+
+/* TASK 3 Arithmetic */
+
+let x = 2
+let y = 4
+
+console.log("Addition:", x + y);
+console.log("Subtraction:", x - y);
+console.log("Multiplication:", x * y);
+console.log("Division:", x / y);
+console.log("Modulus:", x % y);
+
+/* Divide by zero */
+
+console.log("Divide x by zero:", x / 0);
+console.log("Divide zero by zero:", 0 / 0);
+
+/* I wanted to test out two versions of dividing by zero, and I got two outputs:
+Divide x by zero returned Infinite
+Divide zero by zero returned NaN
 */
