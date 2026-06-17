@@ -9,31 +9,10 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log("Total:", total);
 
-/*
-What does the code do step by step?
-    The code adds all the numbers in the array together and prints the total
-        1. Create an array of numbers
-        2. Creates a TOTAL variable starting at 0
-        3. It uses a FOR LOOP to go through each number in the array
-        4. Each number gets added to TOTAL
-        5. After the loop finishes, it prints the final total
-
-What type of loop does the code use?
-    The code uses a "for" loop
-
-What would happen if the array was empty?
-    If the array was empty, the loop wouldn't run, so TOTAL would stay 0 and the output would be 0
-
-*/
 
 /* Part 2: Find the bugs! */
 
-/* Snippet A
-
-Bug:
-The loop condition is count >= 0, which causes the code to print 0
-The expected output only includes numbers from 5 down to 1 before printing "Blast off!"
-*/
+// Snippet A
 
 let count = 5;
 
@@ -44,12 +23,7 @@ while (count > 0) {
 
 console.log("Blast off!");
 
-/* Snippet B
-
-Bug: 
-The condition uses score > 60, which does not include a score of exactly 60
-Since the instructions say 60 or above should pass, the condition should use >=
-*/
+// Snippet B
 
 let score = 60;
 
@@ -59,12 +33,7 @@ if (score >= 60) {
     console.log("fail");
 }
 
-/* Snippet C
-
-Bug: 
-The loop uses i <= numbers.length, which causes it to try to access numbers[4]
-Since the valid indexes are 0, 1, 2, and 3, numbers[4] is undefined, which causes the total to become NaN
-*/
+// Snippet C
 
 let numbers = [10, 20, 30, 40];
 let total = 0;
@@ -94,12 +63,68 @@ if (score >= 90) {
 
 console.log(grade);
 
-/* What I changed:
+/* Part 4: Writing our own code */
 
-Changed x to SCORE (for grade score)
-Changed g to GRADE (name explains what it stores)
-Used const for score because the score doesn't change
-Used let for grade because the value gets assigned later
-Replaced the nested if statements with else if to make the code easier to read
+// Problem 1: Is It Positive, Negative, or Zero? 
 
-*/
+let num = 5;  // Test with different values: 5, -3, 0
+
+// Write an if/else if/else statement that:
+// - Prints "positive" if num is greater than 0
+// - Prints "negative" if num is less than 0
+// - Prints "zero" if num equals 0
+
+// Your code here:
+
+let num = 5;  // Test with different values: 5, -3, 0
+
+if (num > 0) {
+    console.log("positive");
+} else if (num < 0) {
+    console.log("negative");
+} else {
+    console.log("zero");
+}
+
+// Problem 2: Add Only Positive Numbers
+
+let numbers = [1, -2, 3, -4, 5];
+let total = 0;
+
+// Use a loop to go through each number in the array
+// If the number is positive (greater than 0), add it to total
+// Skip negative numbers and zero
+
+// Your code here:
+let numbers = [1, -2, 3, -4, 5];
+let total = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    // Only add positive numbers
+    if (numbers[i] > 0) {
+        total += numbers[i];
+    }
+}
+
+// Print the total
+// Expected output: 9 (because 1 + 3 + 5 = 9)
+console.log("Total of positive numbers: " + total);
+
+
+// Problem 3: Print a Multiplication Table
+
+let num = 3;
+
+// Use a for loop that counts from 1 to 10
+// Each time through the loop, print: num x counter = result
+// For example, if num is 3:
+// 3 x 1 = 3
+// 3 x 2 = 6
+// 3 x 3 = 9
+// ... and so on up to 3 x 10 = 30
+
+// Your code here:
+
+for (let i = 1; i <= 10; i++) {
+    console.log(num + " x " + i + " = " + (num * i));
+}
