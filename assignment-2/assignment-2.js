@@ -74,3 +74,32 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log("Total: " + total);
+
+/* Part 3: Improve the code */
+
+const score = 85;
+let grade = "";
+
+if (score >= 90) {
+    grade = "A";
+} else if (score >= 80) {
+    grade = "B";
+} else if (score >= 70) {
+    grade = "C";
+} else if (score >= 60) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+
+console.log(grade);
+
+/* What I changed:
+
+Changed x to SCORE (for grade score)
+Changed g to GRADE (name explains what it stores)
+Used const for score because the score doesn't change
+Used let for grade because the value gets assigned later
+Replaced the nested if statements with else if to make the code easier to read
+
+*/
