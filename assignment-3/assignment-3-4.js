@@ -26,3 +26,12 @@ for (let i = 0; i < numbers.length; i++) {
 console.log("Total of positive numbers: " + total);
 
 /* Total of positive numbers: 9 */
+
+/* Problem 3: Print a Multiplication Table */
+
+let multiplicationTable = 3;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(multiplicationTable + " x " + i + " = " + (multiplicationTable * i));
+}
+
